@@ -1,0 +1,154 @@
+html, body {
+    width: 100%;
+    height:100%;
+  }
+  
+  body {
+      background: black;
+  }
+
+
+
+  img
+  {
+      max-width: 60%;
+      max-height: 50px;
+      display: block;
+      margin:auto;
+  }
+
+
+.navigation {
+ list-style: none;
+ margin: 0;
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: center;
+}
+.navigation a {
+ font-family: 'Courier New';
+ font-weight: bold;
+ font-size: medium;
+ text-decoration: none;
+ display: block;
+ padding: 1em;
+ color: rgb(205, 204, 204);
+}
+.navigation a:hover {
+
+ font-weight:normal;
+ font-style:normal;
+ font-size: medium;
+ padding: 1.0em;
+ color: rgb(233, 70, 45);
+
+}
+@media all and (max-width: 800px) {
+ .navigation {
+ justify-content: space-around;
+ }
+}
+@media all and (max-width: 600px) {
+ .navigation {
+ flex-flow: column wrap;
+ padding: 0;
+ }
+ .navigation a {
+  
+
+   
+ text-align: center;
+ padding: 10px;
+ }
+ .navigation li:last-of-type a {
+ border-bottom: none;
+ }
+}
+
+
+.storybox
+ {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    list-style: none;
+
+
+
+    text-decoration: none;
+    border: 5px rgb(255, 255, 255) solid;
+    padding: 9px;
+    margin-top: 10%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    position:relative;
+    max-width: 60%;
+    max-height: 70%;
+    overflow: auto;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.storybox a{
+    list-style: none;
+    text-decoration: none;
+    color:#a3a3a3;
+    gap: 5px;
+    margin: 20px;
+    padding: 5px;
+}
+
+
+.storybox a:hover {
+    background-color: white;
+    color: black;
+}
+
+audio{
+    display: none;
+}
+
+.particle{position: absolute; top: -450px; text-align: center;
+    animation: ParticleSlide ease-in infinite;
+    -webkit-animation: ParticleSlide ease-in infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;}
+    @keyframes ParticleSlide {from {position: absolute; top: 663px;} to {position: absolute; top: -450px;}}
+    @-webkit-keyframes ParticleSlide {from {position: absolute; top: -450px;} to {position: absolute; top: 633px;}}
+
+
+    @keyframes colorAnimation {
+        0% { 
+          background-color: red
+        }
+        20% { 
+            background-color: rgb(255, 89, 0)
+          }
+          60% { 
+            background-color: rgb(183, 92, 152)
+          }
+          80% { 
+            background-color: rgb(124, 36, 129)
+          }
+        100% { 
+          background-color: red
+        }
+      }
+
+      
+.progress-bar {	
+
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    bottom: 0px;
+    height: 10%;
+	background-color: #ee303c;  
+    border-radius: 4px; 
+    animation: colorAnimation 5s;
+    animation-iteration-count: infinite;
+      }
+      

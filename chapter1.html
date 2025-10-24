@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 1</title>
+    <link rel="icon" type="image/x-icon" href="images/splat.png" />
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+  </head>
+  <body>
+    <audio controls autoplay>
+      <source src="audio/sanctuary.mp3" style="display:none;" type="audio/mp3" />
+    </audio>
+
+    <audio id="hover_noise" src="audio/hover.wav" preload="auto"></audio>
+
+    <header class="header">
+      <img
+        src="https://see.fontimg.com/api/renderfont4/8Mqz2/eyJyIjoiZHciLCJoIjo3OCwidyI6MTI1MCwiZnMiOjYyLCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiIzA2MDYwNiJ9/dGhlIHBsb3QgdGhpY2tlbnM/redpixel.png"
+        alt="3D fonts"
+      />
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">NEW GAME</a></li>
+        <li><a href="redirect.html">RESUME GAME</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div id="storybox" class="storybox">
+        <div id="text"></div>
+        <div id="options"></div>
+        <div id="button"></div>
+      </div>
+
+      <img class="particle" alt="orb" src="images/orb.png" style="-webkit-animation-delay: 0s;animation-delay: 0s;-webkit-animation-duration: 4s;animation-duration: 6s; left:10%; " />
+      <img class="particle" alt="orb" src="images/orb.png" style="-webkit-animation-delay: 1s;animation-delay: 1s;-webkit-animation-duration: 4s;animation-duration: 6s; left:20%; " />
+      <img class="particle" alt="orb" src="images/orb.png" style="-webkit-animation-delay: 2s;animation-delay: 2s; -webkit-animation-duration: 4s;animation-duration: 6s; left:30%; " />
+      <img class="particle" alt="orb" src="images/orb.png" style="-webkit-animation-delay: 3s;animation-delay: 3s; -webkit-animation-duration: 4s;animation-duration: 4s; left:70%; " />
+      <img class="particle" alt="orb" src="images/orb.png" style="-webkit-animation-delay: 0s;animation-delay: 0s; -webkit-animation-duration: 5s;animation-duration: 5s; left:80%; " />
+      <img class="particle" alt="orb" src="images/orb.png" style=" -webkit-animation-delay: 2s;animation-delay: 2s; -webkit-animation-duration: 5s;animation-duration: 5s; left:90%; " />
+    </main>
+
+    <style type="text/css">
+    /* preserved placeholder for inline styles (was empty in original Pug) */
+    </style>
+
+    <script src="javascripts/key_functions.js"></script>
+    <script src="javascripts/chapter1.js"></script>
+  </body>
+</html>

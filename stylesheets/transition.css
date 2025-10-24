@@ -1,0 +1,77 @@
+
+  
+  body {
+    background: white;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+a{
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(0, 0, 0);
+  display: block;
+  margin: 1em;
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+
+.bloodbox
+{
+    position: absolute;
+    margin: 0%;
+    width: 100%; 
+    height: 100%; 
+    background: #e00917; 
+    animation: slideDownFade 8s forwards, colourChange 12s forwards;
+}
+
+.blood img
+{
+    position: absolute;
+    top: -100%;
+    right: 0px;
+    width: 100%;
+    max-height: 100%;
+    animation: slideDown 8s;
+}
+
+
+.original
+{
+    margin-top: 20%;
+}
+
+.original img
+{
+  max-width: 80%;
+  display: block;
+  margin:auto;
+  margin-bottom: 0%;
+}
+
+@keyframes slideDown {
+   0% {
+       transform: translate(0px, 0%);
+   }
+
+   100% {
+       transform: translate(0px, 200vh);
+   }
+}
+
+@keyframes slideDownFade {
+    0%{left: 0%; top: -190vh;}
+
+    100% { left: 0%; top: 0%; }
+    
+ }
+
+ @keyframes colourChange{
+    67% {background-color: #e00917;}
+    100% {background-color: black;}
+    
+ }
