@@ -1,0 +1,134 @@
+body {
+    background-image:url("../images/crimescene.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+html {
+    height: 100%
+}
+
+a{
+    font-family: 'Courier New';
+    color: white;
+    position: absolute;
+    left: 45%;
+    top: 20%;
+}
+
+.items{
+    opacity: 60%;
+}
+
+.items:hover{
+    opacity: 100%;
+    
+}
+
+.status_bar {	
+
+    position: absolute;
+    top:25%;
+    left: 30%;
+    width: 0%;
+    bottom: 0px;
+    height: 4%;
+	background-color: white;  
+    padding: 0%;
+      }
+    
+    .status_background {	
+
+    z-index: -10;
+    position: absolute;
+    top:25%;
+    left: 30%;
+    width: 40%;
+    bottom: 0px;
+    height: 4%; 
+    border: 1px rgb(255, 255, 255) solid;
+    padding: 0%;
+        }
+
+#blood
+{
+    position: absolute;
+    width: 4%;
+    height: 7%;
+    top: 55%;
+    left: 75%;
+}
+
+#mug
+{
+    position: absolute;
+    width: 3%;
+    height: 6%;
+    top:47%;
+    left: 48%;
+}
+
+#footprint
+{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top:83%;
+    left: 50%;
+}
+
+#splat2
+{
+    position: absolute;
+    width: 6%;
+    height: 6%;
+    top:88%;
+    left: 26%;
+}
+
+#drip
+{
+    position: absolute;
+    width: 6%;
+    height: 6%;
+    top:60%;
+    left: 53%;
+}
+
+#writing
+{
+    position: absolute;
+    width: 5%;
+    height: 10%;
+    top:82%;
+    left: 12%;
+    transform: rotate(10deg);
+}
+
+#water
+{
+    position: absolute;
+    width: 5%;
+    height: 13%;
+    top:70%;
+    left: 90%;
+}
+
+#book
+{
+    position: absolute;
+    width: 17%;
+    height: 13%;
+    top:80%;
+    left: 77%;
+}
+
+#email
+{
+    position: absolute;
+    width: 17%;
+    height: 17%;
+    top:33%;
+    left: 44%;
+}
+
+

@@ -1,0 +1,62 @@
+
+  
+  body {
+    background: white;
+}
+
+img
+{
+  max-width: 80%;
+  display: block;
+  margin:auto;
+  margin-bottom: 0%;
+  animation: fadeIn 10s;
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInDelay{
+  0% { opacity:0; }
+  40% { opacity:0; }
+  100% { opacity:1; }
+}
+
+@keyframes showButton{
+  0% { opacity:0; }
+  40% { opacity:0; }
+  100% { opacity:1; }
+}
+
+ a{
+  font-family: 'Courier New';
+  text-align: center;
+    list-style: none;
+    text-decoration: none;
+    color:#000000;
+    gap: 5px;
+    margin: 20px;
+    padding: 5px;
+}
+
+
+a:hover {
+    background-color: rgb(79, 191, 203);
+    color: black
+}
+
+.title_fade_in
+{
+    margin-top: 20%;
+}
+
+.info_fade_in
+{
+    text-decoration-style: none;
+    list-style: none;
+  color: rgb(0, 0, 0);
+  animation: fadeInDelay 10s;
+}
